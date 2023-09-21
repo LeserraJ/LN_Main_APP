@@ -3,28 +3,31 @@ import Link from "next/link";
 export default function Login_page() {
   return (
     <>
-      <div className="flex h-screen flex-col justify-center items-center">
-        <div className="text-center mb-5">
+      <div className="flex h-screen flex-col justify-center items-center bg-gradient-to-b from-slate-400 to-zinc-400">
+        <div className="bg-gray-300 rounded-md px-2 py-2">
+        <div className="text-center mb-5 ">
           <h1 className="font-bold">Welcome, Please Login</h1>
         </div>
-        <div className="grid grid-rows-2 gap-2 py-3 border-2 border-red-500 justify-center text-center w-full">
+        <div className="grid grid-rows-2 gap-2 py-3 justify-center text-center w-full">
           <form className=" space-x-2">
-            <label>Username:</label>
-            <input title="username" placeholder="Enter Username"></input>
+            <label className="text-gray-800">Username:</label>
+            <input className="rounded-full text-center" title="username" placeholder="Enter Username"></input>
           </form>
-          <form className="space-x-3">
-            <label>Password:</label>
-            <input title="password" placeholder="Enter Password"></input>
+          <form className="space-x-3.5">
+            <label className="text-gray-800">Password:</label>
+            <input className="rounded-full text-center" title="password" placeholder="Enter Password"></input>
           </form>
-          <div className="grid grid-rows-2 gap-2 my-2 border-2 border-blue-500">
-            <button className="py-2" type="submit" title="login_button">
+          <div className="grid grid-rows-2 gap-2 my-2 ">
+            <button className="py-2 bg-emerald-400 hover:bg-emerald-600 rounded-full" type="submit" title="Login">
               Login
             </button>
             <p className="py-.5">
-              <Link href="/">Forgot Username or Password?</Link>
+              <Link className="font-bold text-gray-800 hover:text-sky-500 "href="/">Forgot Username or Password?</Link>
             </p>
           </div>
         </div>
+        </div>
+       
       </div>
     </>
   );
