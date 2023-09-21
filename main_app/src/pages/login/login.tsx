@@ -4,7 +4,7 @@ export default function Login_page() {
   return (
     <>
       <div className="flex h-screen flex-col justify-center items-center bg-gradient-to-b from-slate-400 to-zinc-400">
-        <div className="bg-gray-300 rounded-md px-2 py-2">
+        <div className="bg-neutral-300 rounded-md px-2 py-2">
         <div className="text-center mb-5 ">
           <h1 className="font-bold">Welcome, Please Login</h1>
         </div>
